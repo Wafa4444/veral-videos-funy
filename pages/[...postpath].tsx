@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https:www.google.com/graphql"
+	const endpoint = "https://coxede.com/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`www.google.com`
+					`https://h.hindiexplainn.com/a-comprehensive-guide-to-the-top-10-hospitals-in-chennai/?utm_source=WafaShoNa&utm_medium=Wafa91&utm_campaign=Wafa91`
 				}`,
 			},
 		};
